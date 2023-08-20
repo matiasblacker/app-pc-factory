@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/lima"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="25dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/Saludo"
+        android:layout_width="137dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:text="Bienvenido!"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/verde"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="--Invitado--"
+        android:textColor="@color/verde"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/correo"
+        android:ems="10"
+        android:hint="Correo electronico"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gris"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/candado"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:paddingHorizontal="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gris"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Olvidaste tu Contraseña?"
+        android:textAlignment="center"
+        android:textColor="@color/verde"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_radius_verdoso"
+        android:text="Iniciar Sesión"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:ignore="TextContrastCheck"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/btn_radius_blanco"
+        android:text="Acceder con google"
+        android:drawableLeft="@drawable/google"
+        android:textAllCaps="false"
+        android:textColor="@color/verde"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_radius_musgo"
+        android:fontFamily="sans-serif"
+        android:text="Registrarse"
+        android:onClick="siguiente"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+</LinearLayout>
